@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeFi Platform</title>
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="http://localhost:8080/bundle.js"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box header">
+        Header
+        <div class="connectButton">
+          <button id="button-Metamask">
+            Connect Metamask
+            <!-- <img src="../static/img/metamaskIcon.jpg" height="35" /> -->
+          </button>
+        </div>
+      </div>
+      <div class="box sidebar">
+        <div class="userWallet">
+          ETH Balance: <span id="balance"></span> <br />
+          <section>
+            <nav>
+              <div
+                style="overflow:scroll;height:450px;width:100%;overflow:auto"
+                id="showData"
+              ></div>
+            </nav>
+          </section>
+        </div>
+      </div>
+      <div class="box content">
+        <formSection>
+          <div style="width: 50%; float:left">
+            <div class="buy-form">
+              <h2>BUY: <span id="tokenNameBuy"></span></h2>
+              <!-- Token name -->
+              <form>
+                Price: <br />
+                <input id="buyPrice" type="number" name="price" value="" />
+                <br />
+                Amount: <br />
+                <span id="tokenAddress" value=""></span>
+                <span id="tokenSource" value=""></span>
+                <input
+                  id="amountEntryBuy"
+                  type="number"
+                  oninput="expectedRateBuy()"
+                />
+                <br /><br />
+                <p>Expected Amount: <span id="minRateBuy"></span></p>
+                <br /><br />
+                <input id="buy" type="submit" value="Buy" />
+              </form>
+            </div>
+          </div>
+
+          <div style="width: 50%; float:right">
+            <div class="sell-form">
+              <h2>SELL: <span id="tokenNameSell"></span></h2>
+              <!-- Token name -->
+              <form>
+                Price: <br />
+                <input id="sellPrice" type="number" name="price" value="" />
+                <br />
+                Amount: <br />
+                <span id="tokenSourceSell" value=""></span>
+                <span id="tokenAddressSell" value=""></span>
+                <input
+                  id="amountEntrySell"
+                  type="number"
+                  oninput="expectedRateSell()"
+                />
+                <br /><br />
+                <p>Expected Amount: <span id="minRateSell"></span></p>
+                <br /><br />
+                <input id="sell" type="submit" value="Sell" />
+              </form>
+            </div>
+          </div>
+        </formSection>
+      </div>
+
+      <div class="box footer">Footer</div>
+    </div>
+  </body>
+</html>
