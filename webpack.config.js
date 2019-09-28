@@ -1,5 +1,5 @@
 var path = require("path");
-var HtmlWebpackPlugin = require("html-webpack-plugin");
+//var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -40,6 +40,9 @@ module.exports = {
   devServer: {
     headers: {
       "Access-Control-Allow-Origin": "*"
-    }
+    },
+    port: 8080,
+    contentBase: './views',
+    watchContentBase:true
   }
 };

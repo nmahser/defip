@@ -1,0 +1,36 @@
+{
+  "name": "defip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w webpack.config.js -x webpack-dev-server",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+
+    "@babel/core": "^7.6.0",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "cli": "^1.0.1",
+    "css-loader": "^3.2.0",
+    "diff": "^4.0.1",
+    "eth-balance-checker": "^0.1.1",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-fetch": "^2.6.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
+    "web3": "^1.2.1",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2",
+    "webpack-dev-server": "^3.8.1"
+  }
+}

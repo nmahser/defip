@@ -6,15 +6,11 @@
     <title>DeFi Platform</title>
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script
-      type="text/javascript"
-      src="http://localhost:8080/bundle.js"
-    ></script>
+    <script src="http://localhost:8080/bundle.js" type="module"></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="box header">
-        Header
         <div class="connectButton">
           <button id="button-Metamask">
             Connect Metamask
@@ -43,21 +39,16 @@
               <!-- Token name -->
               <form>
                 Price: <br />
-                <input id="buyPrice" type="number" name="price" value="" />
+                <input id="buyPrice" type="number" step="any" name="price" value="" />
                 <br />
-                Amount: <br />
+                ETH Amount: <br />
                 <span id="tokenAddress" value=""></span>
                 <span id="tokenSource" value=""></span>
-                <input
-                  id="amountEntryBuy"
-                  type="number"
-                  oninput="expectedRateBuy()"
-                />
+                <input id="amountEntryBuy" step="any" type="number" /> <br /><br />
+                <p>Expected Amount(Token): <br><span id="minRateBuy"></span></p>
                 <br /><br />
-                <p>Expected Amount: <span id="minRateBuy"></span></p>
-                <br /><br />
-                <input id="buy" type="submit" value="Buy" />
               </form>
+              <input id="buyButton" type="submit" value="Buy" />
             </div>
           </div>
 
@@ -67,21 +58,17 @@
               <!-- Token name -->
               <form>
                 Price: <br />
-                <input id="sellPrice" type="number" name="price" value="" />
+                <input id="sellPrice" type="number" step="any" name="price" value="" />
                 <br />
-                Amount: <br />
+                Token Amount: <br />
                 <span id="tokenSourceSell" value=""></span>
                 <span id="tokenAddressSell" value=""></span>
-                <input
-                  id="amountEntrySell"
-                  type="number"
-                  oninput="expectedRateSell()"
-                />
-                <br /><br />
-                <p>Expected Amount: <span id="minRateSell"></span></p>
-                <br /><br />
-                <input id="sell" type="submit" value="Sell" />
+                <input id="amountEntrySell" step="any" type="number" /> <br /><br />
+                <p>Expected Amount(ETH): <br> <span id="minRateSell"></span></p>
+                <br /><br />          
               </form>
+              <input id="sellButton" type="submit" value="Sell" />
+
             </div>
           </div>
         </formSection>
