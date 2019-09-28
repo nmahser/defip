@@ -9,3 +9,6 @@ we'll be implementing a token swap powered by Kyber's smart contracts
 `cd defip` <br>
 `npm install`<br>
 `npm run` <br>
+
+### Notes
+We can consider this version as a prototype for token swaps. You can buy and sell tokens on the main net. The app doesn't work on Ropsten Network (Test Net) because ERC20 tokens addresses are different in the main and test nets. 
