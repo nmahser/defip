@@ -1,7 +1,5 @@
 # DeFi Platform
-The goal of this project to create a platform which includes DeFi (Decentralized Finance) applications, such as crypto margin trading and lending. As a starting point
-we'll be implementing a token swap powered by Kyber's smart contracts
-
+ERC20 tokens exchange which uses Kyber Network's smart contract deployed in Ethereum Blockchain.
 
 
 ## Instalation / Preparation
@@ -10,5 +8,3 @@ we'll be implementing a token swap powered by Kyber's smart contracts
 `npm install`<br>
 `npm run` <br>
 
-### Notes
-We can consider this version as a prototype for token swaps. You can buy and sell tokens on the main net. The app doesn't work on Ropsten Network (Test Net) because ERC20 tokens addresses are different in the main and test nets. 
